@@ -10,7 +10,7 @@ SPG est un système de skills Claude Code qui industrialise la création de pré
 
 ```bash
 # 1. Clone le repo
-git clone https://github.com/charlesbezard/SPG-portable.git ~/repos/SPG-portable
+git clone https://github.com/Drazeb/SPG-portable.git ~/repos/SPG-portable
 
 # 2. Installe les dépendances Node
 cd ~/repos/SPG-portable
@@ -70,7 +70,7 @@ SPG est conçu pour fonctionner **standalone** OU **en aval du Brand Identity Ge
 BIG s'attend à trouver SPG cloné côte à côte. Convention de chemin :
 
 ```bash
-~/repos/BIG-portable/      # cloné depuis github.com/charlesbezard/BIG-portable
+~/repos/BIG-portable/      # cloné depuis github.com/Drazeb/BIG-portable
 ~/repos/SPG-portable/      # ce repo
 ```
 
@@ -106,7 +106,7 @@ npm install   # si package.json a changé
 
 ## Contributing
 
-Voir [`CONTRIBUTING.md`](CONTRIBUTING.md). Le projet est principalement maintenu par [Charles Bezard](https://github.com/charlesbezard). Pour signaler un bug ou proposer une amélioration, ouvre une [issue GitHub](../../issues) d'abord.
+Voir [`CONTRIBUTING.md`](CONTRIBUTING.md). Le projet est principalement maintenu par [Charles Bezard](https://github.com/Drazeb). Pour signaler un bug ou proposer une amélioration, ouvre une [issue GitHub](../../issues) d'abord.
 
 ## License
 

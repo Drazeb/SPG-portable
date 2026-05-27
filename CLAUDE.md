@@ -57,7 +57,7 @@ SPG-portable/
 ## Setup initial pour un nouveau user
 
 ```bash
-git clone https://github.com/charlesbezard/SPG-portable.git ~/repos/SPG-portable
+git clone https://github.com/Drazeb/SPG-portable.git ~/repos/SPG-portable
 cd ~/repos/SPG-portable
 npm install
 ```
