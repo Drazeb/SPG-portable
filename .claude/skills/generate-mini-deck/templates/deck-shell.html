@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Deck — {{CONTENT_cover.brand}}</title>
+
+<!-- Google Fonts — résolu au render selon tokens.json -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family={{FONT_QUERY_DISPLAY}}&family={{FONT_QUERY_BODY}}&family={{FONT_QUERY_DATA}}&display=swap" rel="stylesheet">
+
+<style>
+  /* Reset minimal */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  /* Base slide : viewport canonique 1280×720 */
+  .slide {
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }
+</style>
+</head>
+<body>
+
+{{SLIDE_01}}
+
+{{SLIDE_02}}
+
+{{SLIDE_03}}
+
+{{SLIDE_04}}
+
+</body>
+</html>

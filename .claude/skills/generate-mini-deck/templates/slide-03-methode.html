@@ -1,0 +1,41 @@
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SLIDE 03 — MÉTHODE (Positif)                       -->
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- Spec : 3 ou 4 colonnes égales avec dividers verticaux 1px. -->
+<!-- Les colonnes et dividers sont générés en boucle par render-deck.py -->
+<!-- via une directive d'expansion ci-dessous (voir slide-specs.md). -->
+<div class="slide slide-03-methode" style="background: {{TOKEN_colors.neutrals.background_primary}};">
+
+  <!-- Overline : 02 — MÉTHODE -->
+  <div style="position: absolute; top: 96px; left: 88px; width: 400px;
+              font-family: {{TOKEN_typography.body.family}}, system-ui, sans-serif;
+              font-size: 12px;
+              font-weight: 600;
+              letter-spacing: 0.16em;
+              text-transform: uppercase;
+              color: {{TOKEN_colors.secondary.main}};">{{CONTENT_methode.eyebrow}}</div>
+
+  <!-- Ligne séparatrice horizontale (rappel cover) -->
+  <div style="position: absolute; top: 140px; left: 88px; width: 48px; height: 1px; background: {{TOKEN_colors.secondary.main}};"></div>
+
+  <!-- HEADLINE -->
+  <div style="position: absolute; top: 172px; left: 88px; width: 1000px;
+              font-family: {{TOKEN_typography.display.family}}, Georgia, serif;
+              font-weight: {{TOKEN_typography.display.weight}};
+              font-size: 56px;
+              line-height: 1.15;
+              letter-spacing: {{TOKEN_typography.display.tracking}};
+              color: {{TOKEN_colors.neutrals.text_primary}};">{{CONTENT_methode.headline}}</div>
+
+  <!-- Colonnes — boucle render-deck.py -->
+  {{#STEPS_COLUMNS}}{{/STEPS_COLUMNS}}
+
+  <!-- Numéro de slide bas-droite -->
+  <div style="position: absolute; top: 660px; left: 1080px; width: 112px;
+              font-family: {{TOKEN_typography.data.family}}, ui-monospace, monospace;
+              font-size: 11px;
+              font-weight: 500;
+              letter-spacing: 0.08em;
+              color: {{TOKEN_colors.neutrals.text_secondary}};
+              text-align: right;">03 / 04</div>
+</div>

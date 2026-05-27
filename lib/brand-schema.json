@@ -1,0 +1,149 @@
+{
+  "$schema": "brand-tokens-v1",
+  "$description": "Schéma universel définissant les 50+ paramètres extractibles de tout style guide. Ce fichier est le CONTRAT que tout tokens.json doit respecter.",
+
+  "colors": {
+    "primary": {
+      "main": { "type": "hex", "description": "Couleur principale de la marque" },
+      "80": { "type": "rgba", "description": "Couleur principale à 80% opacité" }
+    },
+    "secondary": {
+      "main": { "type": "hex", "description": "Couleur d'accent/flash" },
+      "tint": { "type": "rgba", "description": "Couleur d'accent en fond léger (20%)" }
+    },
+    "neutrals": {
+      "white": { "type": "hex", "description": "Blanc pur" },
+      "background_primary": { "type": "hex", "description": "Fond de page dominant" },
+      "background_secondary": { "type": "hex", "description": "Fond de section alternatif" },
+      "border": { "type": "hex", "description": "Couleur des bordures et dividers" },
+      "text_primary": { "type": "hex", "description": "Couleur des titres et textes forts" },
+      "text_secondary": { "type": "hex", "description": "Couleur des textes secondaires et légendes" }
+    },
+    "semantic": {
+      "success": { "type": "hex", "description": "État positif/optimal" },
+      "warning": { "type": "hex", "description": "Alerte/attention" },
+      "error": { "type": "hex", "description": "Erreur/danger" }
+    },
+    "dataviz": {
+      "series_a": { "type": "hex", "description": "Série principale (graphiques)" },
+      "series_b": { "type": "hex", "description": "Série highlight (graphiques)" },
+      "series_c": { "type": "hex", "description": "Série comparative (graphiques)" },
+      "series_d": { "type": "hex", "description": "Série baseline (graphiques)" }
+    }
+  },
+
+  "typography": {
+    "display": {
+      "family": { "type": "string", "description": "Police des titres (H1, H2, H3)" },
+      "weight": { "type": "string", "description": "Graisse par défaut des titres" },
+      "tracking": { "type": "string", "description": "Letter-spacing des titres (ex: -0.02em)" },
+      "leading": { "type": "string", "description": "Line-height des titres (ex: 0.95)" }
+    },
+    "body": {
+      "family": { "type": "string", "description": "Police du corps de texte" },
+      "leading": { "type": "string", "description": "Line-height du corps (ex: 1.6)" }
+    },
+    "data": {
+      "family": { "type": "string", "description": "Police monospace pour les données" }
+    },
+    "scale": {
+      "h1": { "type": "string", "description": "Taille H1 Hero (ex: 64px+)" },
+      "h2": { "type": "string", "description": "Taille H2 Section (ex: 48px)" },
+      "h3": { "type": "string", "description": "Taille H3 Card Title (ex: 32px)" }
+    },
+    "overline": {
+      "transform": { "type": "string", "description": "Text-transform (ex: uppercase)" },
+      "tracking": { "type": "string", "description": "Letter-spacing overline (ex: +0.05em)" },
+      "weight": { "type": "string", "description": "Font-weight overline (ex: 500)" },
+      "color_token": { "type": "string", "description": "Référence au token couleur (ex: colors.primary.main)" }
+    }
+  },
+
+  "ui_physics": {
+    "radius": {
+      "sm": { "type": "string", "description": "Petits éléments (boutons internes) - ex: 6px" },
+      "xl": { "type": "string", "description": "Cartes standards - ex: 12px" },
+      "2xl": { "type": "string", "description": "Conteneurs majeurs - ex: 16px" },
+      "3xl": { "type": "string", "description": "Slides/Fenêtres - ex: 24px" }
+    },
+    "shadows": {
+      "sm": { "type": "string", "description": "Ombre légère - ex: 0 1px 2px rgba(0,0,0,0.05)" },
+      "signature": { "type": "string", "description": "Ombre signature de la marque - ex: 0 4px 20px -2px rgba(15,118,110,0.08)" }
+    },
+    "glassmorphism": {
+      "background": { "type": "string", "description": "Fond semi-transparent - ex: rgba(255,255,255,0.85)" },
+      "blur": { "type": "string", "description": "Flou backdrop - ex: 16px" },
+      "border": { "type": "string", "description": "Bordure glass - ex: 1px solid rgba(255,255,255,0.5)" }
+    },
+    "strokes": {
+      "dividers": { "type": "string", "description": "Épaisseur dividers - ex: 1px" },
+      "icons": { "type": "string", "description": "Épaisseur traits icônes - ex: 1.2px" },
+      "active_states": { "type": "string", "description": "Épaisseur états actifs - ex: 2px" }
+    },
+    "grid_unit": { "type": "string", "description": "Unité de base du rythme - ex: 8px" }
+  },
+
+  "iconography": {
+    "style": { "type": "string", "description": "Style des icônes - ex: outline, solid, duotone" },
+    "terminaisons": { "type": "string", "description": "Fin des traits - ex: round, square" },
+    "forms": { "type": "string", "description": "Type de formes - ex: open, closed" },
+    "stroke_width": { "type": "string", "description": "Épaisseur du trait - ex: 1.2px" }
+  },
+
+  "data_visualization": {
+    "curve_style": { "type": "string", "description": "Style des courbes - ex: bezier-smooth, linear" },
+    "fill_style": { "type": "string", "description": "Remplissage sous courbe - ex: gradient 20% to 0%" },
+    "gridlines": {
+      "style": { "type": "string", "description": "Style des lignes de grille - ex: dotted, solid" },
+      "color_token": { "type": "string", "description": "Référence couleur - ex: colors.neutrals.border" },
+      "opacity": { "type": "string", "description": "Opacité - ex: 40%" }
+    },
+    "zero_line": { "type": "string", "description": "Style ligne zéro - ex: solid 1px" }
+  },
+
+  "layout": {
+    "grid_columns": { "type": "string", "description": "Nombre de colonnes - ex: 12" },
+    "gutter": { "type": "string", "description": "Gouttière entre colonnes - ex: 24px" },
+    "spacing_scale": { "type": "array", "description": "Échelle d'espacements - ex: [8, 16, 32, 64, 128]" },
+    "section_rhythm": { "type": "string", "description": "Espacement entre sections majeures - ex: 128px" },
+    "composition": {
+      "type": "string",
+      "description": "Style de composition pour l'ARRANGEMENT SPATIAL des layouts - ex: symmetric, asymmetric, centered. DISTINCT de illustration.composition qui concerne les éléments décoratifs.",
+      "values": ["symmetric", "asymmetric", "centered", "editorial"],
+      "note": "Si absent du style guide, DÉDUIRE de la personnalité brand (voice.personality) ou laisser flexible"
+    }
+  },
+
+  "illustration": {
+    "metaphor": { "type": "string", "description": "Métaphore visuelle - ex: Bio-Mimicry, Blueprint" },
+    "trait": { "type": "string", "description": "Style du trait - ex: 1px Slate-300" },
+    "nodes": { "type": "string", "description": "Style des nœuds - ex: cercles pleins Oxygen ou Flash" },
+    "movement": { "type": "string", "description": "Indication de mouvement - ex: lignes pointillées" },
+    "composition": { "type": "string", "description": "Style de composition - ex: Centré/Orbital" }
+  },
+
+  "photography": {
+    "style": { "type": "string", "description": "Style photo - ex: High-Key, Scandinave, Architectural" },
+    "color_grading": {
+      "contrast": { "type": "string", "description": "Ajustement contraste - ex: -10%" },
+      "brightness": { "type": "string", "description": "Ajustement luminosité - ex: +5%" },
+      "saturation": { "type": "string", "description": "Ajustement saturation - ex: -10%" },
+      "tint": { "type": "string", "description": "Teinte ombres - ex: +2% Teal" }
+    }
+  },
+
+  "logotype": {
+    "safe_area": { "type": "string", "description": "Zone de protection - ex: hauteur lettre C" },
+    "variants": {
+      "positive": { "type": "string", "description": "Usage sur fond clair" },
+      "negative": { "type": "string", "description": "Usage sur fond sombre" }
+    }
+  },
+
+  "voice": {
+    "personality": { "type": "string", "description": "Personnalité de marque - ex: L'Architecte Sage" },
+    "tone": { "type": "array", "description": "Attributs du ton - ex: [Humble, Transparent, Inspirant]" },
+    "forbidden_words": { "type": "array", "description": "Mots interdits - ex: [Gestion, Contrôle, Admin]" },
+    "preferred_words": { "type": "array", "description": "Mots préférés - ex: [Synchronisation, Respiration, Flux]" }
+  }
+}

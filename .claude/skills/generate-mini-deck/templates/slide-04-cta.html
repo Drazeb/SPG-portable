@@ -1,0 +1,61 @@
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SLIDE 04 — CTA (Dark Cinema — symétrie cover)      -->
+<!-- ═══════════════════════════════════════════════════ -->
+<div class="slide slide-04-cta" style="background: {{TOKEN_colors.primary.main}};">
+
+  <!-- Halo radial décoratif bottom-left (symétrie avec cover top-right) -->
+  <div style="position: absolute; top: 0; left: 0; width: 1280px; height: 720px; background: radial-gradient(circle at 22% 78%, {{TOKEN_colors.secondary.main}}1F 0%, transparent 55%);"></div>
+
+  <!-- Overline : 03 — VOUS -->
+  <div style="position: absolute; top: 96px; left: 88px; width: 400px;
+              font-family: {{TOKEN_typography.body.family}}, system-ui, sans-serif;
+              font-size: 12px;
+              font-weight: 600;
+              letter-spacing: 0.16em;
+              text-transform: uppercase;
+              color: {{TOKEN_colors.secondary.main}};">04 — RALLIEMENT</div>
+
+  <!-- Ligne séparatrice horizontale (rappel cover) -->
+  <div style="position: absolute; top: 140px; left: 88px; width: 48px; height: 1px; background: {{TOKEN_colors.secondary.main}};"></div>
+
+  <!-- Statement display -->
+  <div style="position: absolute; top: 240px; left: 88px; width: 1104px;
+              font-family: {{TOKEN_typography.display.family}}, Georgia, serif;
+              font-weight: {{TOKEN_typography.display.weight}};
+              font-size: 64px;
+              line-height: 1.15;
+              letter-spacing: {{TOKEN_typography.display.tracking}};
+              color: {{TOKEN_colors.neutrals.white}};">{{CONTENT_cta.statement}}</div>
+
+  <!-- Bouton CTA -->
+  <div style="position: absolute; top: 488px; left: 88px; width: 280px; height: 56px;
+              background: {{TOKEN_colors.secondary.main}};
+              border-radius: {{TOKEN_ui_physics.radius.xl}};
+              display: flex;
+              align-items: center;
+              justify-content: center;">
+    <span style="font-family: {{TOKEN_typography.body.family}}, system-ui, sans-serif;
+                 font-size: 15px;
+                 font-weight: 600;
+                 letter-spacing: 0.04em;
+                 color: {{TOKEN_colors.primary.main}};">{{CONTENT_cta.label}}</span>
+  </div>
+
+  <!-- Contact en mono -->
+  <div style="position: absolute; top: 576px; left: 88px; width: 800px;
+              font-family: {{TOKEN_typography.data.family}}, ui-monospace, monospace;
+              font-size: 14px;
+              font-weight: 500;
+              letter-spacing: 0.04em;
+              color: {{TOKEN_colors.neutrals.white}}AA;">{{CONTENT_cta.contact}}</div>
+
+  <!-- Wordmark mini bas-droite -->
+  <div style="position: absolute; top: 640px; left: 992px; width: 200px;
+              font-family: {{TOKEN_typography.display.family}}, Georgia, serif;
+              font-weight: {{TOKEN_typography.display.weight}};
+              font-size: 28px;
+              line-height: 1.0;
+              letter-spacing: {{TOKEN_typography.display.tracking}};
+              color: {{TOKEN_colors.neutrals.white}};
+              text-align: right;">{{CONTENT_cta.brand}}<span style="color: {{TOKEN_colors.secondary.main}};">.</span></div>
+</div>
