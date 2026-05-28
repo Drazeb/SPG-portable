@@ -106,8 +106,13 @@ npm install   # si package.json a changé
 
 ## Contributing
 
-Voir [`CONTRIBUTING.md`](CONTRIBUTING.md). Le projet est principalement maintenu par [Charles Bezard](https://github.com/Drazeb). Pour signaler un bug ou proposer une amélioration, ouvre une [issue GitHub](../../issues) d'abord.
+Voir [`CONTRIBUTING.md`](CONTRIBUTING.md). Pour signaler un bug ou proposer une amélioration, ouvre une [issue GitHub](../../issues) d'abord.
 
 ## License
 
 [MIT](LICENSE) — utilisez, modifiez, distribuez librement, en gardant le copyright.
+
+## Maintainer
+
+Created and maintained by [Charles Bezard](https://github.com/Drazeb).
+Built with [Claude Code](https://claude.ai/code).
